@@ -1,0 +1,13 @@
+<body>
+    <h1>All Grades</h1>
+    <ul>
+      <% grades.forEach(function(g) { %>
+        <li>
+          <%= g.class %> 
+          <%=  g.grade %>
+            - 
+          <%= g.pass ? 'passed' : 'fail' %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
